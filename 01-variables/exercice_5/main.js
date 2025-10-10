@@ -1,13 +1,12 @@
 // Exercice 5
 // Écrivez votre code ici
 // Fonction pour convertir Celsius en Fahrenheit
-function convertirEnFahrenheit(celsius) {
+function celsiusToFahrenheit(celsius) {
   return (celsius * 9/5) + 32;
 }
 
-// On demande la température à l'utilisateur
-let celsius = prompt("Entre la température en Celsius :");
+let celsius = 25;
+let fahrenheit = celsiusToFahrenheit(celsius);
+console.log(celsius + "°C équivaut à " + celsiusToFahrenheit(celsius) + "°F");
 
-// Conversion et affichage du résultat
-let fahrenheit = convertirEnFahrenheit(celsius);
-console.log(`${celsius}°C = ${fahrenheit}°F`);
+module.exports = {celsiusToFahrenheit};
