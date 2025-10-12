@@ -11,3 +11,5 @@ console.log("Age du père :", agePere);
 console.log("Age de la mère :", ageMere);
 console.log("Age du grand-père :", ageGrandPere);
 console.log("Age de l'oncle :", ageOncle);
+
+module.exports = { ageEnfant, agePere, ageMere, ageGrandPere, ageOncle };
